@@ -1,0 +1,55 @@
+// Italian keyboard with Dvorak layout and 
+// © 2007 Federico Zenith
+// Released under the General Public License (GPL) v3 or later
+
+// Tastiera italiana Dvorak
+partial alphanumeric_keys 
+xkb_symbols "dvorak" {
+    include "us(dvorak)"
+
+    name[Group1]="Italian - Dvorak";
+
+    key <TLDE> { [  backslash,	bar			] };
+    key <AE01> { [	    1,	exclam, exclamdown	] };
+    key <AE02> { [	    2,	quotedbl		] };
+    key <AE03> { [	    3,	numbersign		] };
+    key <AE04> { [	    4,	dollar			] };
+    key <AE05> { [	    5,	percent			] };
+    key <AE06> { [	    6,	ampersand		] };
+    key <AE07> { [	    7,	slash			] };
+    key <AE08> { [	    8,	parenleft		] };
+    key <AE09> { [	    9,	parenright		] };
+    key <AE10> { [	    0,	equal			] };
+    key <AE11> { [	 plus, question, questiondown	] };
+    key <AE12> { [ dead_grave, dead_acute		] };
+
+    key <AD01> { [         at,	dead_tilde 		] };
+    key <AD02> { [	comma,	semicolon		] };
+    key <AD03> { [  period, colon			] };
+    key <AD05> { [	    y, Y,	yen		] };
+    key <AD10> { [	    l, L,	sterling	] };
+    key <AD11> { [ apostrophe,	asterisk, dead_cedilla	] };
+    key <AD12> { [ dead_circumflex, dead_diaeresis, dead_caron ] };
+
+    key <AC01> { [          a,  A,	masculine, ordfeminine	] };
+    key <AC02> { [          o,  O,	oe,	OE		] };
+    key <AC03> { [	    e,	E,	EuroSign		] };
+    key <AC04> { [	    u,	U,	dead_breve		] };
+    key <AC10> { [	    s,	S,	ssharp			] };
+    key <AC11> { [	minus,	underscore, dead_macron		] };
+    key <BKSL> { [ less, greater, guillemotleft, guillemotright ] };
+
+    key <LSGT> { [  braceleft,	bracketleft		] };
+    key <AB01> { [ braceright,	bracketright		] };
+    key <AB05> { [	    x,	X,      multiply	] };
+    key <AB07> { [	    m,	M,	mu		] };
+
+    key <SPCE> { [	space, space, nobreakspace, nobreakspace ] };
+
+    key <LWIN> { [   Multi_key ] };
+    key <RWIN> { [   Multi_key ] };
+
+    include "altwin(menu)"
+    include "level3(ralt_switch)"
+};
+
